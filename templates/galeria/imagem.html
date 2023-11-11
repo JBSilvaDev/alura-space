@@ -14,14 +14,7 @@
             </div>
         </header>
         <main class="principal">
-            <section class="menu-lateral">
-                <nav class="menu-lateral__navegacao">
-                    <a href="{% url 'home' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
-                </nav>
-            </section>
+     {% include 'galeria/partials/_menu_lateral.html' %}
             <section class="conteudo">
                 <section class="imagem">
                     <div class="imagem__conteudo">
@@ -38,15 +31,5 @@
             </section>
         </main>
     </div>
-    <footer class="rodape">
-        <div class="rodape__icones">
-            <a href="https://twitter.com/AluraOnline" target=”_blank” >
-                <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="ícone twitter">
-            </a>
-            <a href="https://www.instagram.com/aluraonline/" target=”_blank” >
-                <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
-            </a>
-        </div>
-        <p class="rodape__texto">Desenvolvido por Alura</p>
-    </footer>
+
 {% endblock %}
