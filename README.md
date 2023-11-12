@@ -2,13 +2,11 @@
 Trata-se de um projeto django com duas páginas html exibindo imagens staticas.
 
 Para este projeto funcioanr é necessário:
-- Criar e ativar amebiente virtual venv
-- Instalar o django e python-dotenv
-- Iniciar projeto e copiar a SECRET-KEY
-- Criar arquivo .env e colar a SECRET-KEY ele
-- Criar app e fazer primeiro runserver
-  - Parar servidor na sequencia
-- baixar e colar as pastas deste projeto na raiz do projeto criado substituindo pastas de mesmo nome
+- Clonar projeto do github
+- Abrir o projeto no vscode
+- Criar e ativar ambiente virtual
+- Instalar dependendias com freeze `pip install -r requirements.txt`
+- Execultar `python manage.py runserver`
 
 ## Orientações diversas
 - Instalação e ativação do pacote gerenciador do ambiente virtual
