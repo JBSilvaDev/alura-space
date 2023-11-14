@@ -7,3 +7,4 @@ Para este projeto funcioanr é necessário:
 - Criar e ativar ambiente virtual
 - Instalar dependendias com freeze `pip install -r requirements.txt`
 - Execultar `python manage.py runserver`
+- Talvez seja necessário configurar uma nova SECRET_KEY para o projeto django
