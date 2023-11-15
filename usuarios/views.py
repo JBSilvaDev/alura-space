@@ -60,6 +60,9 @@ def cadastro(request):
 
 
 def logout(request):
+    if not request.user.is_authenticated:
+        messages.info(request, "Usuário não logado, desnecessário fazer logout")
+        return redirect("login")
     auth.logout(request)
     messages.info(request, "Você saiu...")
     return redirect("login")
