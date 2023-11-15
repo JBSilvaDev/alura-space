@@ -38,9 +38,6 @@ def cadastro(request):
     if request.method == "POST":
         form = CadastroForms(request.POST)
         if form.is_valid():
-            if form["senha_1"].value() != form["senha_2"].value():
-                messages.error(request, "Senhas não são iguais")
-                return redirect("cadastro")
             nome = form["nome_cadastro"].value()
             email = form["email"].value()
             senha_1 = form["senha_1"].value()
@@ -53,7 +50,7 @@ def cadastro(request):
                 username=nome, email=email, password=senha_1
             )
             usuario.save()
-            messages.success(request, f"Cadastro realizado com sucesso -> {nome}!")
+            messages.success(request, f"Cadastro realizado com sucesso ➡️ {nome}!")
             return redirect("login")
 
     return render(request, "usuarios/cadastro.html", {"form": form})

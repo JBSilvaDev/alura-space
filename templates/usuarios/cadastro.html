@@ -62,6 +62,11 @@
                                 style="color:#D9D9D9; margin-bottom: 5px;">{{field.label}}</label>
                             {{ field }}
                         </div>
+                        {% for error in field.errors %}
+                        <div style="color:rgb(161, 65, 65); margin-bottom: 5px">
+                            {{error}}
+                        </div>
+                        {% endfor %}
                         {% endfor %}
                         <div>
                             <button type="submit" class="btn btn-success col-12"
