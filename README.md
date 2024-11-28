@@ -24,8 +24,13 @@ Para que o projeto funcione corretamente, siga os passos abaixo:
 
 A página web foi desenvolvida para armazenar e exibir informações sobre eventos e fatos relacionados ao espaço, tais como planetas e nebulosas. O sistema possui um conjunto completo de operações CRUD para gerenciar esses dados.
 
+![](./static/assets/imagens/galeria/carina-nebula.png)
+
 ## Executando o Projeto
 
 Após seguir os passos acima, o projeto estará em execução localmente. Acesse a aplicação no navegador e explore as informações fascinantes sobre o espaço.
 
 **Que a jornada pelo cosmos seja inspiradora!**
+
+
+
